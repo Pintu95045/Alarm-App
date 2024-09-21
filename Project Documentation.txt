@@ -1,0 +1,64 @@
+Project Name: Custom Timer Application
+Description:
+The Custom Timer Application allows users to set multiple timers simultaneously. Each timer can be customized by hours, minutes, and seconds, and users can manage timers dynamically. The project was developed with a focus on clean UI, intuitive functionality, and following a Figma-based design theme.
+
+1. Features
+Multiple Timers: Create multiple timers, each with customizable time.
+Dynamic Management: Start, stop, and remove timers independently.
+Responsive UI: A user-friendly interface inspired by the Figma design.
+Timer Alerts: Each timer turns yellow and displays a message when time is up.
+Input Validation: Prevents the creation of timers with invalid inputs.
+Audio Alerts: Optional feature to play sound when the timer ends.
+2. Technologies Used
+HTML: Provides the structure and layout for the input fields, buttons, and timer display.
+CSS:
+Customized using a Figma-based design for consistent color themes and styling.
+Provides responsiveness and visual improvements such as hover effects and button transitions.
+JavaScript:
+Handles the timer logic, including countdown functionality, dynamic DOM manipulation, and validation.
+Manages multiple timers with unique IDs for each timer instance.
+3. Implementation Details
+3.1. HTML Structure
+The HTML document is organized into different sections:
+Title: Displays the heading of the Timer Application.
+Input Section: Users can input hours, minutes, and seconds to set a timer.
+Active Timers Section: Displays all currently running timers with options to stop or remove them.
+3.2. CSS Customizations
+The colors are based on the Figma design to ensure visual consistency:
+Background Color: #34344A for the main body and timer input section.
+Button Colors: Buttons are highlighted with #F0F757 to improve visibility and interaction feedback.
+Input Fields: Styled to be wider (60px), with centered text to ensure the timer input is user-friendly.
+Hover Effects: Enhanced to provide smooth transitions when users interact with the buttons.
+3.3. JavaScript Functionality
+Timer Creation: Users input values for hours, minutes, and seconds. If no value is provided, the timer will default to 0.
+Timer Display: The active timers display in the format h:m:s, and timers count down dynamically.
+Audio Alerts: The playAlertSound function allows audio to be played when a timer finishes. (The sound file path needs to be provided.)
+Timer End Behavior: Once a timer ends, the timer box turns yellow, and the message "Timer is up!" appears.
+4. User Guide
+4.1. Creating a Timer
+Enter the desired time in hours, minutes, and/or seconds.
+Click on the Start Timer button.
+The timer will appear in the active timers section and begin counting down.
+4.2. Managing Timers
+Stop Timer: Click the Stop button to pause the timer.
+Remove Timer: Click the Remove button to delete the timer.
+Once a timer is up, it will turn yellow, and the message “Timer is up!” will be displayed.
+5. Installation & Usage
+5.1. Prerequisites
+Browser: Any modern web browser (e.g., Chrome, Firefox, Safari).
+Optional: A sound file (e.g., .mp3) for timer alerts.
+5.2. How to Use
+Clone the repository:
+bash
+Copy code
+git clone https://github.com/pintu95045/timer-application.git
+Open the project in your favorite code editor.
+Launch the index.html file in a browser to start using the application.
+6. Future Enhancements
+Sound Alerts: Add functionality to customize alert sounds for each timer.
+Themes: Add theme customization (e.g., dark/light mode).
+Progress Bars: Include visual progress bars for each timer.
+Persistence: Implement a feature to save timers to local storage, so they remain active even after page reload.
+7. Contribution
+Contributions are welcome! Please open a pull request for any enhancements or bug fixes. Ensure to follow the project's code style and provide thorough documentation with changes.
+

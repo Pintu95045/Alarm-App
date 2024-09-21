@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi Timer App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Title of the application -->
+        <h1 style="color: aliceblue;">Multiple Timer App</h1>
+        
+        <!-- Timer Input Section -->
+        <div class="timer-input-section">
+            <span>Set Time:</span>
+            <!-- Input fields for hours, minutes, and seconds with placeholders -->
+            <input type="number" id="hours" placeholder="hh" min="0"> :
+            <input type="number" id="minutes" placeholder="mm" min="0" max="59"> : 
+            <input type="number" id="seconds" placeholder="ss" min="0" max="59">
+            <!-- Button to start the timer -->
+            <button id="start-timer">Set</button>
+        </div>
+
+        <!-- Section to display active timers -->
+        <h2>Current Timers</h2>
+        <!-- Message when there are no active timers -->
+        <p style="color: aliceblue; text-align: center;" id="no"> You have no timers currently!</p>
+
+        <!-- Container for dynamically added timers -->
+        <div class="active-timers-section">
+            <div id="timers-container"></div>
+        </div>
+    </div>
+    
+    <!-- External JavaScript file for timer logic -->
+    <script src="script.js"></script>
+</body>
+</html>

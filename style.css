@@ -1,0 +1,124 @@
+/* General body settings */
+body {
+    font-family: Arial, sans-serif;
+    background-color: black; /* Updated to match Figma background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container for the entire application */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Timer input section styling */
+.timer-input-section {
+    margin-bottom: 20px;
+    background-color: #34344A; /* Matched Figma design color */
+    border-radius: 10px;
+    color: #e9ecef; /* Figma-based color for text */
+    font-size: 20px;
+    width: 500px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Input fields for hours, minutes, and seconds */
+.timer-input-section input {
+    width: 60px;
+    padding: 5px;
+    margin-right: 10px;
+    text-align: center;
+    background-color: #34344A; /* Figma input field background */
+    color: #fff; /* Input text color */
+    border: none;
+    outline: none;
+}
+
+input::placeholder {
+    color: white; /* Placeholder text color */
+}
+
+/* Button styling for starting the timer */
+#start-timer {
+    padding: 8px 35px;
+    background-color: #F0F757; /* Updated to match Figma button color */
+    color: black;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#start-timer:hover {
+    background-color: #0056b3; /* Hover effect */
+    color: wheat;
+}
+
+/* Container for active timers */
+#timers-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Timer box styling */
+.timer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 10px;
+    width: 520px;
+    border-radius: 10px;
+    background-color: #34344A; /* Timer background */
+    color: white;
+}
+
+/* Styling when a timer ends */
+.timer-ended {
+    background-color: #ffc107; /* Ended timer background color */
+}
+
+/* Button inside each timer box */
+.timer button {
+    padding: 8px 30px;
+    background-color: #F0F757; /* Matched Figma design */
+    color: black;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.time {
+    font-size: 28px; /* Updated font size for timer text */
+}
+
+/* Hover effect for stop/delete button */
+.timer button:hover {
+    background-color: #c82333;
+}
+
+/* Styling for the heading of the active timers section */
+h2 {
+    background-color: #39393E;
+    color: white;
+    width: 300px;
+    font-size: 20px;
+    padding: 8px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.timer-input-section span {
+    margin-right: 21px;
+}
+
+/* Hidden class for the 'no timers' message */
+.hidden {
+    display: none;
+}
